@@ -1,0 +1,12 @@
+#==================================#
+#                                  #
+#  Snax's .gitignore for scripts.  #
+#                                  #
+#==================================#
+
+# Ignore everything.
+#*
+
+# But not these files.
+#!.gitignore
+#!nmap.sh
