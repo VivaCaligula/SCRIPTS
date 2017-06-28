@@ -1,4 +1,5 @@
 #!/bin/bash
+# This was from an image posted on lainchan.org
 
 # Get local IP from ifconfig.
 localIP=($(sudo ifconfig | grep "inet " | awk '{print $2}' | awk 'END{print}' ))
