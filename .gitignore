@@ -5,8 +5,9 @@
 #==================================#
 
 # Ignore everything.
-#*
+*
 
 # But not these files.
-#!.gitignore
-#!nmap.sh
+!.gitignore
+!README.md
+!nmap.sh
