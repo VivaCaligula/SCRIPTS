@@ -5,10 +5,11 @@
 #==================================#
 
 # Ignore everything.
-*
+#*
 
 # But not these files.
 !.gitignore
 !README.md
 !nmap.sh
 !ss.sh
+!colors.sh
