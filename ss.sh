@@ -8,4 +8,6 @@ else
 	scrot 'scrot17%m%d_%M-%s.png' -e 'mv $f ~/Pictures/scrots/'
 fi
 
-printf "\n  Screenshot taken.\n\n"
+dunst -p "Screenshot taken."
+
+#printf "\n  Screenshot taken.\n\n"
