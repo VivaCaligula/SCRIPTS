@@ -1,4 +1,8 @@
 #!/bin/bash
+#===================================#
+#     Snax's screenshot script.     #
+#===================================#
+
 # This was modified from a script by Andre Linusus - https://i.imgur.com/QqUCFik.png
 
 if [ "$1" == "window" ]
