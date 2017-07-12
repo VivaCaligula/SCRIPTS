@@ -13,3 +13,7 @@
 !nmap.sh
 !ss.sh
 !colors.sh
+!lock.sh
+!pipes.sh
+!rice.sh
+!dmenu.sh
