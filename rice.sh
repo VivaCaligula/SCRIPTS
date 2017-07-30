@@ -16,11 +16,11 @@ sudo pacman-key --refresh-keys
 
 # Automatically dl + install all the programs you want from the arch repo; this will take a while.
 # Replace gdm with whatever your prefered DM is (as well as other prefered programs).
-sudo pacman --color always --force --noconfirm -S git zip ntp zsh ttf-dejavu awesome-terminal-fonts terminus-font gnome gnome-tweak-tool poppler inkscape firefox htop ranger atom vim tmux powerline screenfetch vlc hexchat libreoffice-still multibit volctl obs-studio bleachbit snort nmap cmatrix thunar bspwm sxhkd termite dmenu feh compton cool-retro-term dunst redshift
+sudo pacman --color always --force --noconfirm -S git zip ntp zsh ttf-dejavu awesome-terminal-fonts terminus-font gnome gnome-tweak-tool poppler inkscape bspwm sxhkd termite dmenu feh compton ranger tmux htop nmap firefox atom powerline screenfetch vlc hexchat libreoffice-still multibit volctl obs-studio bleachbit cmatrix thunar cool-retro-term dunst redshift wine
 systemctl enable gdm.service
 
 # Automatically DL + install all programs from the AUR; this will take a while.
-sudo yaourt --color --force --noconfirm -S w3m imagemagick neofetch hsetroot polybar wal-git i3lock-color-git
+sudo yaourt --color --force --noconfirm -S w3m imagemagick neofetch hsetroot polybar wal-git i3lock-color-git chkboot
 
 # DL the dotfiles for all the programs (automatically into their right paths) from git repo.
 cd ~
