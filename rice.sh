@@ -26,6 +26,7 @@ sudo yaourt --color --force --noconfirm -S w3m imagemagick neofetch hsetroot pol
 cd ~
 git pull https://github.com/VivaCaligula/DOTFILES.git
 cp -f powerlineconfigs/* /usr/lib/python3.6/site-packages/powerline/
+# $ polybar -r rome # Refreshes polybar's cache.
 
 # Extra stuff for powerline.
 git clone https://github.com/powerline/fonts.git
