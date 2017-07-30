@@ -20,7 +20,7 @@ sudo pacman --color always --force --noconfirm -S git zip ntp zsh ttf-dejavu awe
 systemctl enable gdm.service
 
 # Automatically DL + install all programs from the AUR; this will take a while.
-sudo yaourt --color --force --noconfirm -S w3m imagemagick neofetch hsetroot polybar wal-git i3lock-color-git chkboot
+sudo yaourt --color --force --noconfirm -S w3m imagemagick neofetch hsetroot polybar python-pywal i3lock-color-git chkboot
 
 # DL the dotfiles for all the programs (automatically into their right paths) from git repo.
 cd ~
