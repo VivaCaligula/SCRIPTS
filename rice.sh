@@ -28,7 +28,7 @@ cd ~
 git clone https://github.com/VivaCaligula/DOTFILES.git
 sudo mv -f ~/DOTFILES/* ~/
 sudo rm -rf ~/DOTFILES
-cp -rf powerlineconfigs/* /usr/lib/python3.6/site-packages/powerline/
+cp -rf powerlineconfigs/* /usr/lib/python3.6/site-packages/powerline/config_files/
 # $ polybar -r rome # Refreshes polybar's cache.
 
 # Extra stuff for powerline.
@@ -38,6 +38,14 @@ cd fonts
 ./install.sh
 cd ..
 sudo rm -rf fonts
+
+# Bitmap fonts.
+cd ~
+git clone https://github.com/Tecate/bitmap-fonts.git
+cd ~/bitmap-fonts
+sudo cp -avr bitmap/ /usr/share/fonts
+xset fp+ /usr/share/fonts/bitmap
+fc-cache -fv
 
 # Whatever Shell you get, replace zsh with your prefered shell.
 which zsh
