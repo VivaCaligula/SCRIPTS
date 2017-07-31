@@ -46,6 +46,8 @@ cd ~/bitmap-fonts
 sudo cp -avr bitmap/ /usr/share/fonts
 xset fp+ /usr/share/fonts/bitmap
 fc-cache -fv
+cd ~
+sudo rm -rf bitmap-fonts
 
 # Whatever Shell you get, replace zsh with your prefered shell.
 which zsh
