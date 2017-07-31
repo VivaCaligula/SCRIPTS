@@ -16,11 +16,7 @@ sudo pacman-key --refresh-keys
 
 # Automatically dl + install all the programs you want from the arch repo; this will take a while.
 # Replace gdm with whatever your prefered DM is (as well as other prefered programs).
-<<<<<<< HEAD
 sudo pacman --color always --force --noconfirm -S git zip ntp zsh ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts terminus-font gnome gnome-tweak-tool networkmanager bspwm sxhkd termite dmenu feh compton ranger tmux htop nmap firefox atom powerline screenfetch vlc hexchat libreoffice-still obs-studio bleachbit cmatrix thunar cool-retro-term dunst redshift wine
-=======
-sudo pacman --color always --force --noconfirm -S git zip ntp zsh ttf-dejavu poppler inkscape awesome-terminal-fonts terminus-font gnome gnome-tweak-tool networkmanager bspwm sxhkd termite dmenu feh compton ranger tmux htop nmap firefox atom powerline screenfetch vlc hexchat libreoffice-still obs-studio bleachbit cmatrix thunar cool-retro-term dunst redshift wine
->>>>>>> 8a6f763a03ad2fe7d8ba2465062266338cfe1c4d
 sudo systemctl enable gdm.service
 # multibit & volctl?
 
