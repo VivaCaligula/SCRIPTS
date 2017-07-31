@@ -48,6 +48,11 @@ tail /etc/passwd
 # Additionally, you should get - http://ohmyz.sh/
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# Scripts for dotfiles and etc.
+cd ~
+git clone https://github.com/VivaCaligula/SCRIPTS.git
+mv SCRIPTS scripts
+
 # Extra ranger initialization (to allow img2txt in the terminal).
 ranger --copy-config=scope
 
