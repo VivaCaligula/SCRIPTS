@@ -7,7 +7,7 @@
 # It's assumed you've already installed Arch and enabled the AUR, xserver, etc.
 # If you haven't, do that real quick - https://gist.github.com/VivaCaligula/65a0e3489ec110ed08d31027b1065d4d
 # Additionally, you can autorun this script remotely by doing:
-# $ curl https://github.com/VivaCaligula/SCRIPTS/blob/master/rice.sh | bash
+# $ curl https://raw.githubusercontent.com/VivaCaligula/SCRIPTS/master/rice.sh | bash
 
 # Refresh repositories and keyring.
 sudo pacman -Syu
