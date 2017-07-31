@@ -26,10 +26,13 @@ yaourt --color --force --noconfirm -S w3m imagemagick neofetch hsetroot polybar 
 # DL the dotfiles for all the programs (automatically into their right paths) from git repo.
 cd ~
 git clone https://github.com/VivaCaligula/DOTFILES.git
-cp -f powerlineconfigs/* /usr/lib/python3.6/site-packages/powerline/
+sudo mv -f ~/DOTFILES/* ~/
+sudo rm -rf ~/DOTFILES
+cp -rf powerlineconfigs/* /usr/lib/python3.6/site-packages/powerline/
 # $ polybar -r rome # Refreshes polybar's cache.
 
 # Extra stuff for powerline.
+cd ~
 git clone https://github.com/powerline/fonts.git
 cd fonts
 ./install.sh
@@ -39,6 +42,7 @@ sudo rm -rf fonts
 # Whatever Shell you get, replace zsh with your prefered shell.
 which zsh
 chsh -s /usr/bin/zsh
+sudo chsh -s /usr/bin/zsh
 # To check if user has zsh shell active:
 tail /etc/passwd
 # Additionally, you should get - http://ohmyz.sh/
