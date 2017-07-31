@@ -25,7 +25,7 @@ yaourt --color --force --noconfirm -S w3m imagemagick neofetch hsetroot polybar 
 
 # DL the dotfiles for all the programs (automatically into their right paths) from git repo.
 cd ~
-git pull https://github.com/VivaCaligula/DOTFILES.git
+git clone https://github.com/VivaCaligula/DOTFILES.git
 cp -f powerlineconfigs/* /usr/lib/python3.6/site-packages/powerline/
 # $ polybar -r rome # Refreshes polybar's cache.
 
