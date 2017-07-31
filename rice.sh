@@ -18,10 +18,11 @@ sudo pacman-key --refresh-keys
 # Replace gdm with whatever your prefered DM is (as well as other prefered programs).
 sudo pacman --color always --force --noconfirm -S git zip ntp zsh ttf-dejavu awesome-terminal-fonts terminus-font gnome gnome-tweak-tool poppler inkscape bspwm sxhkd termite dmenu feh compton ranger tmux htop nmap firefox atom powerline screenfetch vlc hexchat libreoffice-still obs-studio bleachbit cmatrix thunar cool-retro-term dunst redshift wine
 sudo systemctl enable gdm.service
-#multibit & volctl?
+# multibit & volctl?
 
 # Automatically DL + install all programs from the AUR; this will take a while.
-yaourt --color --force --noconfirm -S w3m imagemagick neofetch hsetroot polybar python-pywal i3lock-color-git chkboot
+yaourt --color --force --noconfirm -S w3m imagemagick neofetch hsetroot polybar wal-git i3lock-color-git
+# chkboot?
 
 # DL the dotfiles for all the programs (automatically into their right paths) from git repo.
 cd ~
