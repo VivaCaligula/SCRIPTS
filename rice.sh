@@ -1,7 +1,7 @@
 #!/bin/bash
 #=============================#
 #     Snax's rice script.     #
-#=============================#
+#=============================#lol
 
 # This is a rice script for Arch + bspwm and other shit.
 # It's assumed you've already installed Arch and enabled the AUR, xserver, etc.
