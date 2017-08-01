@@ -21,7 +21,7 @@ sudo systemctl enable gdm.service
 # multibit & volctl?
 
 # Automatically DL + install all programs from the AUR; this will take a while.
-yaourt --color --force --noconfirm -S w3m imagemagick neofetch hsetroot polybar-git wal-git i3lock-color-git chkboot nerd-fonts-complete
+yaourt --color --force --noconfirm -S w3m imagemagick neofetch hsetroot polybar-git wal-git i3lock-color-git chkboot nerd-fonts-complete pacmanity
 
 # DL the dotfiles for all the programs (automatically into their right paths) from git repo.
 cd ~
