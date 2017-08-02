@@ -18,10 +18,9 @@ sudo pacman-key --refresh-keys
 # Replace gdm with whatever your prefered DM is (as well as other prefered programs).
 sudo pacman --color always --force --noconfirm -S git zip ntp zsh ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts gnome gnome-tweak-tool networkmanager bspwm sxhkd termite dmenu feh compton ranger tmux htop nmap firefox atom vim powerline powerline-fonts screenfetch vlc hexchat libreoffice-still obs-studio bleachbit cmatrix thunar cool-retro-term dunst redshift wine
 sudo systemctl enable gdm.service
-# multibit & volctl?
 
 # Automatically DL + install all programs from the AUR; this will take a while.
-yaourt --color --force --noconfirm -S w3m imagemagick neofetch hsetroot polybar-git wal-git i3lock-color-git chkboot nerd-fonts-complete pacmanity
+yaourt --color --force --noconfirm -S w3m imagemagick neofetch hsetroot polybar-git wal-git i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord
 
 # DL the dotfiles for all the programs (automatically into their right paths) from git repo.
 cd ~
@@ -30,16 +29,6 @@ sudo mv -f ~/DOTFILES/* ~/
 sudo rm -rf ~/DOTFILES
 cp -rf powerlineconfigs/* /usr/lib/python3.6/site-packages/powerline/config_files/
 # $ polybar -r rome # Refreshes polybar's cache.
-
-# Bitmap fonts.
-# cd ~
-# git clone https://github.com/Tecate/bitmap-fonts.git
-# cd ~/bitmap-fonts
-# sudo cp -avr bitmap/ /usr/share/fonts
-# xset fp+ /usr/share/fonts/bitmap
-# fc-cache -fv
-# cd ~
-# sudo rm -rf bitmap-fonts
 
 # Whatever Shell you get, replace zsh with your prefered shell.
 which zsh
@@ -57,6 +46,16 @@ mv SCRIPTS scripts
 
 # Extra ranger initialization (to allow img2txt in the terminal).
 ranger --copy-config=scope
+
+# Bitmap fonts?
+# cd ~
+# git clone https://github.com/Tecate/bitmap-fonts.git
+# cd ~/bitmap-fonts
+# sudo cp -avr bitmap/ /usr/share/fonts
+# xset fp+ /usr/share/fonts/bitmap
+# fc-cache -fv
+# cd ~
+# sudo rm -rf bitmap-fonts
 
 # Restart your computer, log in with your new DM into bspwm, and you're done.
 systemctl reboot
