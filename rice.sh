@@ -47,15 +47,15 @@ mv SCRIPTS scripts
 # Extra ranger initialization (to allow img2txt in the terminal).
 ranger --copy-config=scope
 
-# Bitmap fonts?
-# cd ~
-# git clone https://github.com/Tecate/bitmap-fonts.git
-# cd ~/bitmap-fonts
-# sudo cp -avr bitmap/ /usr/share/fonts
-# xset fp+ /usr/share/fonts/bitmap
-# fc-cache -fv
-# cd ~
-# sudo rm -rf bitmap-fonts
+# Bitmap fonts, DL these especially if pacman's terminus-font doesn't work.
+cd ~
+git clone https://github.com/Tecate/bitmap-fonts.git
+cd ~/bitmap-fonts
+sudo cp -avr bitmap/ /usr/share/fonts
+xset fp+ /usr/share/fonts/bitmap
+fc-cache -fv
+cd ~
+sudo rm -rf bitmap-fonts
 
 # So that you don't have to "$ sudo wifi-menu" every time.
 sudo systemctl enable NetworkManager.service
