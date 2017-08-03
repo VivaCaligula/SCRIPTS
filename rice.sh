@@ -16,7 +16,7 @@ sudo pacman-key --refresh-keys
 
 # Automatically dl + install all the programs you want from the arch repo; this will take a while.
 # Replace gdm with whatever your prefered DM is (as well as other prefered programs).
-sudo pacman --color always --force --noconfirm -S git zip ntp zsh ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts gnome gnome-tweak-tool networkmanager bspwm sxhkd termite dmenu feh compton ranger tmux htop nmap firefox atom vim powerline powerline-fonts screenfetch vlc hexchat libreoffice-still obs-studio bleachbit cmatrix thunar cool-retro-term dunst redshift wine
+sudo pacman --color always --force --noconfirm -S git zip ntp zsh ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts gnome gnome-tweak-tool networkmanager bspwm sxhkd termite dmenu feh compton ranger tmux htop nmap firefox atom vim powerline powerline-fonts terminus-font screenfetch vlc phonon-qt4-vlc hexchat libreoffice-still obs-studio bleachbit cmatrix thunar cool-retro-term dunst redshift wine
 sudo systemctl enable gdm.service
 
 # Automatically DL + install all programs from the AUR; this will take a while.
@@ -56,6 +56,9 @@ ranger --copy-config=scope
 # fc-cache -fv
 # cd ~
 # sudo rm -rf bitmap-fonts
+
+# So that you don't have to "$ sudo wifi-menu" every time.
+sudo systemctl enable NetworkManager.service
 
 # Restart your computer, log in with your new DM into bspwm, and you're done.
 systemctl reboot
