@@ -44,6 +44,9 @@ cd ~
 git clone https://github.com/VivaCaligula/SCRIPTS.git
 mv SCRIPTS scripts
 
+# Extra Ruby script to add icons to ls
+gem install colorls
+
 # Extra ranger initialization (to allow img2txt in the terminal).
 ranger --copy-config=scope
 
