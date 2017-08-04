@@ -1,7 +1,7 @@
 #!/bin/bash
-#=============================#
-#     Snax's lock script.     #
-#=============================#
+#=================================#
+#     Caligula's lock script.     #
+#=================================#
 
 # Params can be found here- https://github.com/chrjguill/i3lock-color
 

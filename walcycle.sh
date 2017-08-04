@@ -1,7 +1,7 @@
 #! /bin/sh
-#====================================#
-#     Snax's wal recycle script.     #
-#====================================#
+#========================================#
+#     Caligula's wal recycle script.     #
+#========================================#
 
 # Cycle wal background image and colorscheme.
 wal -i "$HOME/Pictures/wal"

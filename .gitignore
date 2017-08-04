@@ -1,20 +1,18 @@
-#==================================#
-#                                  #
-#  Snax's .gitignore for scripts.  #
-#                                  #
-#==================================#
+#======================================#
+#  Caligula's .gitignore for scripts.  #
+#======================================#
 
 # Ignore everything.
 *
 
 # But not these files.
 !.gitignore
-!README.md
-!nmap.sh
-!ss.sh
 !colors.sh
-!lock.sh
-!pipes.sh
-!rice.sh
 !dmenu.sh
+!lock.sh
+!nmap.sh
+!pipes.sh
+!README.md
+!rice.sh
+!ss.sh
 !walcycle.sh

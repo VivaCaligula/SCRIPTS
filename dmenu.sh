@@ -1,7 +1,7 @@
 #!/bin/bash
-#==================================#
-#     Snax's dmenu/wal script.     #
-#==================================#
+#======================================#
+#     Caligula's dmenu/wal script.     #
+#======================================#
 
 # Set the custom colors from wal.
 source "$HOME/.cache/wal/colors.sh"
