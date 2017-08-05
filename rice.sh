@@ -21,8 +21,7 @@ sudo pacman --color always --force --noconfirm -S git zip ntp zsh ttf-dejavu pop
 sudo systemctl enable gdm.service
 
 # Automatically DL + install all programs from the AUR; this will take a while.
-yaourt --color --force --noconfirm -S w3m imagemagick hsetroot neofetch polybar-git dmenu2 wal-git i3lock-color-git grub-customizer gdm3setup chkboot nerd-fonts-complete pacmanity discord
-# to config the display manager do $ sudo gdm3setup
+yaourt --color --force --noconfirm -S w3m imagemagick hsetroot neofetch polybar-git dmenu2 wal-git i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord
 
 # DL the dotfiles for all the programs (automatically into their right paths) from git repo.
 cd ~
