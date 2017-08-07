@@ -9,6 +9,7 @@ if [ "$1" == "window" ]
 then
 	scrot 'scrot17-%m-%d_%M-%s.png' -s -e 'mv $f ~/Pictures/scrots/'
 else
+	sleep 2
 	scrot 'scrot17-%m-%d_%M-%s.png' -e 'mv $f ~/Pictures/scrots/'
 fi
 
