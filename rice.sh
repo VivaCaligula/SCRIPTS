@@ -39,6 +39,7 @@ sudo chsh -s /usr/bin/zsh
 tail /etc/passwd
 # Additionally, you should get - http://ohmyz.sh/
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# If you want root to have the same, you will have to repeat this after $ su
 
 # Scripts for dotfiles and etc.
 cd ~
