@@ -18,9 +18,9 @@ do
             echo "  Record filename is: " $filename
             echo "  Timing filename is: " $timingfile
             printf "\n"
-            echo "  Now recording, type 'exit' when finished."
             timestamp=$(date +%Y/%m/%d)' '$(date +%H:%M:%S)
             echo "  Timestamp:" $timestamp
+            echo "  Now recording, type 'exit' when finished."
             printf "\n"
             script -q -a $filename --timing=$timingfile
             break;;
