@@ -7,6 +7,7 @@
 
 # But not these files.
 !.gitignore
+!busyscreen.sh
 !colors.sh
 !dmenu.sh
 !lock.sh
@@ -15,4 +16,6 @@
 !README.md
 !rice.sh
 !ss.sh
+!termrecorder.sh
+!termreplayer.sh
 !walcycle.sh
