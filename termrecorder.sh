@@ -10,9 +10,9 @@ do
     read -p "  Record terminal session? [y/n]: " answer
     case $answer in
     [yY]* ) read -p "  Filename to record to (will be appended): " name
-            filename=~/terminalrecordings/$name"_record.txt"
+            filename=~/TermRecordings/$name"_record.txt"
             touch $filename
-            timingfile=~/terminalrecordings/$name"_timing.txt"
+            timingfile=~/TermRecordings/$name"_timing.txt"
             touch $timingfile
             printf "\n"
             echo "  Record filename is: " $filename
