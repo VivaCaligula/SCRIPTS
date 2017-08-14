@@ -6,43 +6,43 @@
 bspc rule -a Termite follow=on state=tiled
 
 termite &
-sleep .3
+sleep .2
 bspc node -p east -o 0.5
-sleep .3
+sleep .2
 
 termite &
-sleep .3
+sleep .2
 bspc node -p south -o 0.5
-sleep .3
+sleep .2
 
 termite &
-sleep .3
+sleep .2
 bspc node -f west
-sleep .3
+sleep .2
 bspc node -p south -o 0.5
-sleep .3
+sleep .2
 
 termite &
-sleep .3
+sleep .2
 
 # bspc node -f north
-# sleep .3
+# sleep .2
 # neofetch --block_range 0 15
-# sleep .3
+# sleep .2
 # 
 # bspc node -f east
-# sleep .3
+# sleep .2
 # htop
-# sleep .3
+# sleep .2
 # 
 # bspc node -f south
-# sleep .3
+# sleep .2
 # ls
-# sleep .3
+# sleep .2
 # 
 # bspc node -f west
-# sleep .3
+# sleep .2
 # ranger
-# sleep .3
+# sleep .2
 
 bspc rule -a Termite follow=on state=floating
