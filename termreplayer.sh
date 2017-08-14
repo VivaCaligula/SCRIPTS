@@ -10,8 +10,8 @@ do
     read -p "  Replay or Cat terminal session? [r/c/q]: " answer
     case $answer in
     [rR]* ) read -p "  Filename to replay (leave unappended): " name
-            filename=~/terminalrecorder/$name"_record.txt"
-            timingfile=~/terminalrecorder/$name"_timing.txt"
+            filename=~/terminalrecordings/$name"_record.txt"
+            timingfile=~/terminalrecordings/$name"_timing.txt"
             printf "\n"
             echo "  Record filename is: " $filename
             echo "  Timing filename is: " $timingfile
@@ -23,8 +23,8 @@ do
             printf "\n"
             break;;
     [cC]* ) read -p "  Filename to concatenate (leave unappended): " name
-            filename=~/terminalrecorder/$name"_record.txt"
-            timingfile=~/terminalrecorder/$name"_timing.txt"
+            filename=~/terminalrecordings/$name"_record.txt"
+            timingfile=~/terminalrecordings/$name"_timing.txt"
             printf "\n"
             cat $filename
             printf "\n"
