@@ -1,5 +1,9 @@
 #!/bin/bash
-# This was originally from a thread posted on lainchan.org
+#=================================#
+#     Caligula's nmap script.     #
+#=================================#
+# This is a modified script, original source unknown.
+# nmap cheat sheet - https://hackertarget.com/nmap-cheatsheet-a-quick-reference-guide/
 
 # Get local IP from ifconfig.
 localIP=($(sudo ifconfig | grep "inet " | awk '{print $2}' | awk 'END{print}' ))

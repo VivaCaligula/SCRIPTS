@@ -16,20 +16,12 @@ sudo pacman-key --refresh-keys
 
 # Automatically dl + install all the programs you want from the arch repo; this will take a while.
 # Replace gdm with whatever your prefered DM is (as well as other prefered programs).
-sudo pacman --color always --force --noconfirm -S git zip ntp zsh ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts gnome gnome-tweak-tool networkmanager bspwm sxhkd termite feh compton ranger tmux htop scrot nmap firefox chromium atom vim powerline powerline-fonts terminus-font screenfetch vlc phonon-qt4-vlc hexchat libreoffice-still obs-studio bleachbit mpd ncmpcpp cmatrix thunar cool-retro-term dunst redshift wine nethack dwarffortress
+sudo pacman --color always --force --noconfirm -S git zip ntp zsh rxvt-unicode ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts gnome gnome-tweak-tool networkmanager bspwm sxhkd termite feh compton ranger tmux htop scrot nmap firefox chromium atom vim emacs powerline powerline-fonts terminus-font screenfetch vlc phonon-qt4-vlc hexchat libreoffice-still obs-studio bleachbit mpd ncmpcpp cmatrix thunar cool-retro-term dunst redshift wine nethack dwarffortress
 # dmenu replaced with patched dmenu2 in AUR
 sudo systemctl enable gdm.service
 
 # Automatically DL + install all programs from the AUR; this will take a while.
 yaourt --color --force --noconfirm -S w3m imagemagick hsetroot neofetch polybar-git dmenu2 wal-git i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord
-
-# DL the dotfiles for all the programs (automatically into their right paths) from git repo.
-cd ~
-git clone https://github.com/VivaCaligula/DOTFILES.git
-sudo mv -f ~/DOTFILES/* ~/
-sudo rm -rf ~/DOTFILES
-cp -rf powerlineconfigs/* /usr/lib/python3.6/site-packages/powerline/config_files/
-# $ polybar -r rome # Refreshes polybar's cache.
 
 # Whatever Shell you get, replace zsh with your prefered shell.
 which zsh
@@ -41,18 +33,10 @@ tail /etc/passwd
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # If you want root to have the same, you will have to repeat this after $ su
 
-# Scripts for dotfiles and etc.
-cd ~
-git clone https://github.com/VivaCaligula/SCRIPTS.git
-mv SCRIPTS scripts
-
-# Extra Ruby script to add icons to ls - https://github.com/athityakumar/colorls
-gem install colorls
-
 # Extra ranger initialization (to allow img2txt in the terminal).
 ranger --copy-config=scope
 
-# Bitmap fonts, DL these especially if pacman's terminus-font doesn't work.
+# Bitmap fonts, DL these if pacman's terminus-font doesn't work.
 cd ~
 git clone https://github.com/Tecate/bitmap-fonts.git
 cd ~/bitmap-fonts
@@ -61,6 +45,21 @@ xset fp+ /usr/share/fonts/bitmap
 fc-cache -fv
 cd ~
 sudo rm -rf bitmap-fonts
+
+# DL the dotfiles for all the programs (automatically into their right paths) from git repo.
+cd ~
+git clone https://github.com/VivaCaligula/DOTFILES.git
+sudo mv -f ~/DOTFILES/* ~/
+sudo rm -rf ~/DOTFILES
+cp -rf powerlineconfigs/* /usr/lib/python3.6/site-packages/powerline/config_files/
+# $ polybar -r rome # Refreshes polybar's cache.
+
+# DL all your scripts.
+cd ~
+git clone https://github.com/VivaCaligula/SCRIPTS.git
+mv SCRIPTS scripts
+# Extra Ruby script to add icons to ls - https://github.com/athityakumar/colorls
+gem install colorls
 
 # So that you don't have to "$ sudo wifi-menu" every time.
 sudo systemctl enable NetworkManager.service
