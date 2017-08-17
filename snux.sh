@@ -1,6 +1,6 @@
 #!/bin/bash
 #==============================#
-#     Snerx-Unix ISVOS CLI     #
+#     Snerx-Unix ISVOS CLI     # aka skiddie stuff
 #==============================#
 #
 # Created and maintained by Snax, aka Caligula.
