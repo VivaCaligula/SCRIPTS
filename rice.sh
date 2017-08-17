@@ -47,10 +47,10 @@ cd ~
 sudo rm -rf bitmap-fonts
 
 # DL the dotfiles for all the programs (automatically into their right paths) from git repo.
-cd ~
+cd /home
 git clone https://github.com/VivaCaligula/DOTFILES.git
-sudo mv -f ~/DOTFILES/* ~/
-sudo rm -rf ~/DOTFILES
+sudo mv -vf /home/DOTFILES/* ~/
+sudo rm -rf /home/DOTFILES
 cp -rf powerlineconfigs/* /usr/lib/python3.6/site-packages/powerline/config_files/
 # $ polybar -r rome # Refreshes polybar's cache.
 
