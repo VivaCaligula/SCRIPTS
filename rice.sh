@@ -61,6 +61,11 @@ mv SCRIPTS scripts
 # Extra Ruby script to add icons to ls - https://github.com/athityakumar/colorls
 gem install colorls
 
+# To download the torbrowser.
+# Download the tarball from - https://www.torproject.org/download/download-easy.html.en#linux
+# $ cd ~/Downloads 
+# $ tar -xf tor-whatever
+
 # So that you don't have to "$ sudo wifi-menu" every time.
 sudo systemctl enable NetworkManager.service
 
