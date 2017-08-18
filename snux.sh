@@ -14,8 +14,6 @@
 # Powerline + Awesome fonts and colorls are required for this to work properly.
 # https://github.com/ryanoasis/nerd-fonts
 # https://github.com/athityakumar/colorls
-#
-
 
 # Version and flags.
 VERSION=0.1
@@ -24,6 +22,7 @@ stty cols 64
 stty rows 30
 
 # Flag handling.
+OPTIND=1         # Reset in case getopts has been used previously in the shell.
 while getopts "a:c:t:s:n:hv" arg; do
 case $arg in
     a)  ;;
@@ -49,6 +48,8 @@ case $arg in
         exit 0
     esac
 done
+shift $((OPTIND-1))
+[ "$1" = "--" ] && shift
 
 # Color Definitions
 # Normal Colors
@@ -81,25 +82,35 @@ On_White='\e[47m'       # White
 # Color Reset
 NC="\e[m"
 
-
-# printf "\n"
-# curl https://snerx.com/curl
-clear
-printf "\n"
+FileCheck() {
+    if [ -f $FILE ]; then
+        echo -en ""
+    else
+        echo -e "  Crucial file $FILE does not exist."
+        read -p "  Automatically download it? [y/n]: " response
+        case $response in
+        [yY]* ) echo -e "  Cloning the entire script library..."
+                cd ~
+                git clone https://github.com/VivaCaligula/SCRIPTS.git
+                sudo mv -f SCRIPTS scripts
+                break;;
+        [nN]* ) printf "\n"
+                break;;
+        * )     echo "  Enter yes or no.";;
+        esac
+    fi
+}
 
 # These functions are placeholders.
 BootIntegrity() {
     BI="${Green} ${Blue}"
 }
-
 SnortStatus() {
     SNORT="${Green} ${Blue}"
 }
-
 Network() {
     NET="${Green} ${Blue}"
 }
-
 VPNstatus() {
     VPN="${Red} ${Blue}"
 }
@@ -118,6 +129,8 @@ splash() {
     echo -e "  Boot Integrity: $BI ::: Snort: $SNORT ::: Network: $NET ::: VPN: $VPN"
     echo -e "  ${Red}============================================================  "
     printf "\n"
+    echo -e "  ${Cyan}   Admin      Crypto      Trenches      Rice      Nuke${Red}"
+    printf "\n"
 }
 #                                
 #                               
@@ -127,12 +140,10 @@ splash() {
 prompts () {
     while true
     do
-        echo -e "  ${Cyan}   Admin      Crypto      Trenches      Rice      Nuke${Red}"
-        printf "\n"
         read -p "  [a/c/t/r/n/q]: " response
-        printf "\n"
         case $response in
-        [aA]* ) echo -e "${Cyan}       Manage Users"
+        [aA]* ) printf "\n"
+                echo -e "${Cyan}       Manage Users"
                 echo -e "       Manage Files"
                 echo -e "       Manage Network${Red}"
                 printf "\n"
@@ -146,8 +157,7 @@ prompts () {
                             break;;
                     [3]* )  echo -e "  "
                             break;;
-                    [bB]* ) printf "\n"
-                            prompts
+                    [bB]* ) prompts
                             printf "\n"
                             break;;
                     [qQ]* ) printf "\n"
@@ -157,7 +167,8 @@ prompts () {
                 done
                 printf "\n"
                 break;;
-        [cC]* ) echo -e "${Cyan}       Encrypt/Decrypt + Stego"
+        [cC]* ) printf "\n"
+                echo -e "${Cyan}       Encrypt/Decrypt + Stego"
                 echo -e "       Cryptocurrency Wallets"
                 echo -e "       QR &   Barcodes${Red}"
                 printf "\n"
@@ -171,8 +182,7 @@ prompts () {
                             break;;
                     [3]* )  echo -e "  "
                             break;;
-                    [bB]* ) printf "\n"
-                            prompts
+                    [bB]* ) prompts
                             printf "\n"
                             break;;
                     [qQ]* ) printf "\n"
@@ -182,7 +192,8 @@ prompts () {
                 done
                 printf "\n"
                 break;;
-        [tT]* ) echo -e "${Cyan}       Snort Automation"
+        [tT]* ) printf "\n"
+                echo -e "${Cyan}       Snort Automation"
                 echo -e "       Nmap Automation"
                 echo -e "       Secure Wipe Free Space${Red}"
                 printf "\n"
@@ -196,8 +207,7 @@ prompts () {
                             break;;
                     [3]* )  echo -e "  "
                             break;;
-                    [bB]* ) printf "\n"
-                            prompts
+                    [bB]* ) prompts
                             printf "\n"
                             break;;
                     [qQ]* ) printf "\n"
@@ -207,7 +217,8 @@ prompts () {
                 done
                 printf "\n"
                 break;;
-        [rR]* ) echo -e "${Cyan}       Cycle Wallpaper & System Colors"
+        [rR]* ) printf "\n"
+                echo -e "${Cyan}       Cycle Wallpaper & System Colors"
                 echo -e "       Rice Demo (auto-busy, superls, & ss)"
                 echo -e "       Auto-DL+Install Rice${Red}"
                 printf "\n"
@@ -220,7 +231,7 @@ prompts () {
                             prompts
                             printf "\n"
                             break;;
-                    [2]* )  echo -e "  These scripts are broken..."
+                    [2]* )  echo -e "  These scripts are currently broken..."
                             bash ~/scripts/busy.sh
                             sleep 3
                             bash ~/scripts/ss.sh
@@ -234,8 +245,7 @@ prompts () {
                             prompts
                             printf "\n"
                             break;;
-                    [bB]* ) printf "\n"
-                            prompts
+                    [bB]* ) prompts
                             printf "\n"
                             break;;
                     [qQ]* ) printf "\n"
@@ -247,13 +257,14 @@ prompts () {
                 break;;
         [nN]* ) while true
                 do
-                    echo -e "${Cyan}  Delete encryption keys and wipe all partitions?${Red}" 
+                    printf "\n"
+                    echo -e "${Cyan}  Delete encryption keys and wipe all partitions?${Red}"
+                    printf "\n"
                     read -p "  [y/n]: " response
                     case $response in
                     [yY]* ) echo -e "  "
                             break;;
-                    [nN]* ) printf "\n"
-                            prompts
+                    [nN]* ) prompts
                             printf "\n"
                             break;;
                     [qQ]* ) printf "\n"
@@ -265,11 +276,18 @@ prompts () {
                 break;;
         [qQ]* ) printf "\n"
                 exit;;
-        * )     echo "  Enter admin, crypto, trenches, scripts, nuke, or quit.";;
+        * )     echo -e "  Enter admin, crypto, trenches, rice, nuke, or quit.";;
         esac
     done
 }
 
+# printf "\n"
+# curl https://snerx.com/curl
+
+FILE=~/scripts/nmap.sh
+FileCheck
+clear
+printf "\n"
 BootIntegrity
 SnortStatus
 Network
