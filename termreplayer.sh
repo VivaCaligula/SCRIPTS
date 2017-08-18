@@ -4,6 +4,11 @@
 #==============================================#
 
 
+if [ ! -d ~/TermRecordings ]; then
+    echo -e "\n  The TermRecordings directory does not exist, no file can be replayed.\n"
+    exit
+fi
+
 printf "\n"
 while true
 do

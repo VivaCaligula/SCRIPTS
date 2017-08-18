@@ -3,7 +3,7 @@
 #     Caligula's terminal recorder script.     #
 #==============================================#
 
-
+mkdir -p ~/TermRecordings
 printf "\n"
 while true
 do

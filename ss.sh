@@ -5,6 +5,8 @@
 
 # This was modified from a script by Andre Linusus - https://i.imgur.com/QqUCFik.png
 
+mkdir -p ~/Pictures/scrots/
+
 if [ "$1" == "window" ]
 then
 	scrot 'scrot17-%m-%d_%H-%M-%S.png' -s -e 'mv $f ~/Pictures/scrots/'
@@ -14,5 +16,4 @@ else
 fi
 
 #dunst -p "Screenshot taken."
-
 printf "\n  Screenshot taken.\n\n"
