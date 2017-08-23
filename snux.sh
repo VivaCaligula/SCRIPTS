@@ -83,16 +83,15 @@ On_White='\e[47m'       # White
 NC="\e[m"
 
 FileCheck() {
-    if [ -f $FILE ]; then
-        echo -en ""
-    else
+    if [ ! -f ~/scripts/$FILE ]; then
         echo -e "  Crucial file $FILE does not exist."
         read -p "  Automatically download it? [y/n]: " response
         case $response in
-        [yY]* ) echo -e "  Cloning the entire script library..."
+        [yY]* ) echo -e "  Cloning the script library..."
                 cd ~
                 git clone https://github.com/VivaCaligula/SCRIPTS.git
-                sudo mv -f SCRIPTS scripts
+                mv -f SCRIPTS/$FILE scripts/$FILE
+                rm -rf SCRIPTS
                 break;;
         [nN]* ) printf "\n"
                 break;;
@@ -103,7 +102,7 @@ FileCheck() {
 
 # These functions are placeholders.
 BootIntegrity() {
-    BI="${Green} ${Blue}"
+    BOOTI="${Green} ${Blue}"
 }
 SnortStatus() {
     SNORT="${Green} ${Blue}"
@@ -116,6 +115,11 @@ VPNstatus() {
 }
 
 timestamp=$(date +%Y/%m/%d)' '$(date +%H:%M:%S)
+#                                
+#                               
+#                                
+#                                
+#                          
 
 splash() {
     echo -e "${Red}                    _____ _   _ _   ___   __                    "
@@ -126,17 +130,13 @@ splash() {
     echo -e "                   \____/\_| \_/\___/\/   \/                    "
     echo -e "  ============================================================  "
     echo -e "  ${Blue}Snerx's Unix ISVOS CLI :: Version ${Green}$VERSION${Blue} :: $timestamp"
-    echo -e "  Boot Integrity: $BI ::: Snort: $SNORT ::: Network: $NET ::: VPN: $VPN"
+    echo -e "  Boot Integrity: $BOOTI ::: Snort: $SNORT ::: Network: $NET ::: VPN: $VPN"
     echo -e "  ${Red}============================================================  "
     printf "\n"
     echo -e "  ${Cyan}   Admin      Crypto      Trenches      Rice      Nuke${Red}"
     printf "\n"
 }
-#                                
-#                               
-#                                
-#                                
-#                          
+
 prompts () {
     while true
     do
@@ -284,7 +284,7 @@ prompts () {
 # printf "\n"
 # curl https://snerx.com/curl
 
-FILE=~/scripts/nmap.sh
+FILE=nmap.sh
 FileCheck
 clear
 printf "\n"
