@@ -110,8 +110,8 @@ SnortStatus() {
 Network() {
     NET="${Green} ${Blue}"
 }
-VPNstatus() {
-    VPN="${Red} ${Blue}"
+TORstatus() {
+    TOR="${Red} ${Blue}"
 }
 
 timestamp=$(date +%Y/%m/%d)' '$(date +%H:%M:%S)
@@ -130,7 +130,7 @@ splash() {
     echo -e "                   \____/\_| \_/\___/\/   \/                    "
     echo -e "  ============================================================  "
     echo -e "  ${Blue}Snerx's Unix ISVOS CLI :: Version ${Green}$VERSION${Blue} :: $timestamp"
-    echo -e "  Boot Integrity: $BOOTI ::: Snort: $SNORT ::: Network: $NET ::: VPN: $VPN"
+    echo -e "  Boot Integrity: $BOOTI ::: Snort: $SNORT ::: Network: $NET ::: TOR: $TOR"
     echo -e "  ${Red}============================================================  "
     printf "\n"
     echo -e "  ${Cyan}   Admin      Crypto      Trenches      Rice      Nuke${Red}"
@@ -291,7 +291,7 @@ printf "\n"
 BootIntegrity
 SnortStatus
 Network
-VPNstatus
+TORstatus
 splash
 prompts
 exit
