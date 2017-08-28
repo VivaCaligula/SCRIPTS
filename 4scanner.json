@@ -1,0 +1,35 @@
+/* Roman 4scrapper config. 
+{
+  "imageboard":"IMAGEBOARD",
+  "folder_name":"YOUR_FOLDER_NAME",
+  "board": "BOARD_LETTER",
+  "width": ">1000",
+  "height": ">1000",
+  "filename": "IMG_",
+  "extension": [".jpg", ".png"],
+  "keywords": ["KEYWORD1", "KEYWORD2"]
+  "check_duplicate": true
+},
+*/
+
+{"searches":[
+    {
+      "imageboard":"lainchan",
+      "folder_name":"desktop_thread",
+      "board": "tech",
+      "keywords": ["desktop", "KEYWORD2"]
+    },
+
+    {
+      "imageboard": "4chan",
+      "folder_name": "vidya",
+      "board": "v",
+      "width": ">1000",
+      "height": ">1000",
+      "filename": "IMG_",
+      "extension": [".jpg", ".png"],
+      "keywords": ["tf2", "splatoon", "world of tank"],
+      "check_duplicate": true
+    }
+
+]}

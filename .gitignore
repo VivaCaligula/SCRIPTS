@@ -7,6 +7,7 @@
 
 # But not these files.
 !.gitignore
+!4scanner.json
 !busyscreen.sh
 !colors.sh
 !dmenu.sh
