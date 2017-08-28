@@ -16,7 +16,7 @@ sudo pacman-key --refresh-keys
 
 # Automatically dl + install all the programs you want from the arch repo; this will take a while.
 # Replace gdm with whatever your prefered DM is (as well as other prefered programs).
-sudo pacman --color always --force --noconfirm -S git zip ntp openssh zsh rxvt-unicode ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts gnome gnome-tweak-tool networkmanager bspwm sxhkd termite feh compton ranger tmux htop scrot nmap firefox chromium atom vim emacs powerline powerline-fonts terminus-font screenfetch vlc phonon-qt4-vlc hexchat transmission-qt libreoffice-still obs-studio bleachbit extundelete mpd ncmpcpp cmatrix thunar cool-retro-term dunst redshift wine nethack dwarffortress 
+sudo pacman --color always --force --noconfirm -S git zip ntp openssh zsh rxvt-unicode python-pip ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts gnome gnome-tweak-tool networkmanager bspwm sxhkd termite feh compton ranger tmux htop scrot nmap firefox chromium atom vim emacs powerline powerline-fonts terminus-font screenfetch vlc phonon-qt4-vlc hexchat transmission-qt libreoffice-still obs-studio bleachbit extundelete mpd ncmpcpp cmatrix thunar cool-retro-term dunst redshift wine nethack dwarffortress 
 # dmenu replaced with patched dmenu2 in AUR
 sudo systemctl enable gdm.service
 
@@ -60,6 +60,8 @@ git clone https://github.com/VivaCaligula/SCRIPTS.git
 mv SCRIPTS scripts
 # Extra Ruby script to add icons to ls - https://github.com/athityakumar/colorls
 gem install colorls
+# Extra Python script to add imageboard scrapper - https://github.com/pboardman/4scanner
+pip3 install 4scanner
 
 # To download the torbrowser.
 # Download the tarball from - https://www.torproject.org/download/download-easy.html.en#linux
