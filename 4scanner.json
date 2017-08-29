@@ -1,35 +1,37 @@
-/* Roman 4scrapper config. 
-{
-  "imageboard":"IMAGEBOARD",
-  "folder_name":"YOUR_FOLDER_NAME",
-  "board": "BOARD_LETTER",
-  "width": ">1000",
-  "height": ">1000",
-  "filename": "IMG_",
-  "extension": [".jpg", ".png"],
-  "keywords": ["KEYWORD1", "KEYWORD2"]
-  "check_duplicate": true
-},
-*/
-
 {"searches":[
     {
-      "imageboard":"lainchan",
-      "folder_name":"desktop_thread",
-      "board": "tech",
-      "keywords": ["desktop", "KEYWORD2"]
+        "imageboard":"lainchan",
+        "folder_name":"rice",
+        "board": "tech",
+        "width": ">1080",
+        "height": ">720",
+        "filename": ["*"],
+        "extension": [".jpg", ".png"],
+        "keywords": ["desktop", "rice", "aesthetics"],
+        "check_duplicate": true
     },
 
     {
-      "imageboard": "4chan",
-      "folder_name": "vidya",
-      "board": "v",
-      "width": ">1000",
-      "height": ">1000",
-      "filename": "IMG_",
-      "extension": [".jpg", ".png"],
-      "keywords": ["tf2", "splatoon", "world of tank"],
-      "check_duplicate": true
-    }
+        "imageboard": "4chan",
+        "folder_name": "lewd",
+        "board": "s",
+        "width": "=1920",
+        "height": "=1080",
+        "filename": ["*"],
+        "extension": [".jpg", ".png"],
+        "keywords": ["maid", "cow", "slave", "harem", "asian", "japanese", "chinese", "korean"],
+        "check_duplicate": true
+    },
 
+    {
+        "imageboard": "4chan",
+        "folder_name": "hentai",
+        "board": "h",
+        "width": "=1920",
+        "height": "=1080",
+        "filename": ["*"],
+        "extension": [".jpg", ".png"],
+        "keywords": ["maid", "cow", "harem", "tentacle", "ahegao", "slave", "pet"],
+        "check_duplicate": true
+    }
 ]}
