@@ -19,7 +19,7 @@
         "height": "=1080",
         "filename": ["*"],
         "extension": [".jpg", ".png"],
-        "keywords": ["maid", "cow", "slave", "harem", "asian", "japanese", "chinese", "korean"],
+        "keywords": ["maid", "cow", "harem", "asian", "japanese"],
         "check_duplicate": true
     },
 
@@ -31,7 +31,7 @@
         "height": "=1080",
         "filename": ["*"],
         "extension": [".jpg", ".png"],
-        "keywords": ["maid", "cow", "harem", "tentacle", "ahegao", "slave", "pet"],
+        "keywords": ["maid", "cow", "harem", "ahegao", "slave", "pet"],
         "check_duplicate": true
     }
 ]}
