@@ -120,7 +120,7 @@ VPNstatus() {
     fi
 }
 TORstatus() {
-    if ( pgrep -i tor ); then
+    if ( pgrep -x -i tor ); then
         TOR="${Blue} ${Blue}"
         else TOR="${Red} ${Blue}"
     fi
