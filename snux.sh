@@ -100,21 +100,33 @@ FileCheck() {
     fi
 }
 
-# These functions are placeholders.
+# These functions will be fleshed out later.
 BootIntegrity() {
-    BOOTI="${Green} ${Blue}"
+    BOOTI="${Blue} ${Blue}"
 }
 SnortStatus() {
-    SNORT="${Green} ${Blue}"
+    if ( pgrep -i snort ); then
+        SNORT="${Blue} ${Blue}"
+        else SNORT="${Red} ${Blue}"
+    fi
 }
 Network() {
-    NET="${Green} ${Blue}"
+    NET="${Blue} ${Blue}"
+}
+VPNstatus() {
+    if ( pgrep -i vpn ); then
+        VPN="${Blue} ${Blue}"
+        else VPN="${Red} ${Blue}"
+    fi
 }
 TORstatus() {
-    TOR="${Red} ${Blue}"
+    if ( pgrep -i tor ); then
+        TOR="${Blue} ${Blue}"
+        else TOR="${Red} ${Blue}"
+    fi
 }
 
-timestamp=$(date +%Y/%m/%d)' '$(date +%H:%M:%S)
+timestamp=$(date +%Y/%m/%d)' '$(date +%I:%M:%S)' '$(date +%p)
 #                                
 #                               
 #                                
@@ -129,8 +141,8 @@ splash() {
     echo -e "                   /\__/ / |\  | |_| / /^\ \                    "
     echo -e "                   \____/\_| \_/\___/\/   \/                    "
     echo -e "  ============================================================  "
-    echo -e "  ${Blue}Snerx's Unix ISVOS CLI :: Version ${Green}$VERSION${Blue} :: $timestamp"
-    echo -e "  Boot Integrity: $BOOTI ::: Snort: $SNORT ::: Network: $NET ::: TOR: $TOR"
+    echo -e "  ${Blue}Snerx's Unix VOSCLI :: Version ${Green}$VERSION${Blue} :: $timestamp"
+    echo -e "  Boot Integrity: $BOOTI ::::: IDS: $SNORT ::::: VPN: $VPN ::::: TOR: $TOR"
     echo -e "  ${Red}============================================================  "
     printf "\n"
     echo -e "  ${Cyan}   Admin      Crypto      Trenches      Rice      Nuke${Red}"
@@ -286,12 +298,13 @@ prompts () {
 
 FILE=nmap.sh
 FileCheck
-clear
-printf "\n"
 BootIntegrity
 SnortStatus
 Network
+VPNstatus
 TORstatus
+clear
+printf "\n"
 splash
 prompts
 exit

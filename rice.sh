@@ -16,7 +16,7 @@ sudo pacman-key --refresh-keys
 
 # Automatically dl + install all the programs you want from the arch repo; this will take a while.
 # Replace gdm with whatever your prefered DM is (as well as other prefered programs).
-sudo pacman --color always --force --noconfirm -S git zip ntp openssh zsh rxvt-unicode python-pip ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts gnome gnome-tweak-tool networkmanager bspwm sxhkd termite feh compton ranger tmux htop scrot nmap firefox chromium keepassxc atom vim emacs powerline powerline-fonts terminus-font screenfetch vlc phonon-qt4-vlc hexchat transmission-qt libreoffice-still obs-studio bleachbit extundelete mpd ncmpcpp cmatrix thunar cool-retro-term dunst redshift gimp wine nethack dwarffortress 
+sudo pacman --color always --force --noconfirm -S git zip ntp openssh openvpn zsh rxvt-unicode python-pip ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts gnome gnome-tweak-tool networkmanager bspwm sxhkd termite feh compton ranger tmux htop scrot nmap firefox chromium keepassxc atom vim emacs powerline powerline-fonts terminus-font screenfetch vlc phonon-qt4-vlc hexchat transmission-qt libreoffice-still obs-studio bleachbit extundelete mpd ncmpcpp cmatrix thunar cool-retro-term dunst redshift gimp wine nethack dwarffortress 
 # dmenu replaced with patched dmenu2 in AUR
 sudo systemctl enable gdm.service
 
@@ -33,6 +33,9 @@ tail /etc/passwd
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # If you want root to have the same, you will have to repeat this after $ su
 
+#To use GTK-like theme with Qt edit ~/.config/Trolltech.conf and set
+#   [Qt]
+#   style=GTK+
 # Extra ranger initialization (to allow img2txt in the terminal).
 ranger --copy-config=scope
 
@@ -43,6 +46,8 @@ cd ~/bitmap-fonts
 sudo cp -avr bitmap/ /usr/share/fonts
 xset fp+ /usr/share/fonts/bitmap
 fc-cache -fv
+ln -s ~/.Xresources ~/.Xdefaults
+xrdb ~/.Xresources
 cd ~
 sudo rm -rf bitmap-fonts
 
