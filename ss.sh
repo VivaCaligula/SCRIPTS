@@ -16,5 +16,4 @@ else
 	scrot 'scrot17-%m-%d_%H-%M-%S.png' -e 'mv $f ~/Pictures/scrots/'
 fi
 
-#dunst -p -i $ICON "Screenshot taken."
-printf "\n  Screenshot taken.\n\n"
+dunstify -p --icon=$ICON "Screenshot taken."
