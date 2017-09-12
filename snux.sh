@@ -21,6 +21,16 @@ a=1 c=1 t=1 s=1 n=0
 stty cols 64
 stty rows 30
 
+# Make sure script is run as root on linux.
+if [ `id -u` != "0" ]; then
+        echo "Error: you must be root to run this script!"
+        exit 1
+fi
+if [ $OSTYPE != "linux-gnu" ]; then
+        echo "Error: this script is only for Linux!"
+        exit 1
+fi
+
 # Flag handling.
 OPTIND=1         # Reset in case getopts has been used previously in the shell.
 while getopts "a:c:t:s:n:hv" arg; do
