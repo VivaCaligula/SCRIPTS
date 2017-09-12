@@ -21,7 +21,7 @@ sudo pacman --color always --force --noconfirm -S git zip ntp openssh openvpn zs
 sudo systemctl enable gdm.service
 
 # Automatically DL + install all programs from the AUR; this will take a while.
-yaourt --color --force --noconfirm -S w3m imagemagick hsetroot neofetch polybar-git dmenu2 dunstify wal-git i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord python-tempora python-portend python-cheroot mnemosyne brainworkshop keybase-bin pkgbrowser
+yaourt --color --force --noconfirm -S w3m imagemagick hsetroot neofetch polybar-git dmenu2 dunstify wal-git i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord python-tempora python-portend python-cheroot mnemosyne brainworkshop keybase-bin pkgbrowser primitive
 
 # Whatever Shell you get, replace zsh with your prefered shell.
 which zsh
@@ -72,6 +72,8 @@ pip3 install 4scanner
 # Download the tarball from - https://www.torproject.org/download/download-easy.html.en#linux
 # $ cd ~/Downloads 
 # $ tar -xf tor-whatever
+# To download portable WinSCP - https://winscp.net/eng/download.php
+# $ unzip WinSCP*Portable.zip
 
 # So that you don't have to "$ sudo wifi-menu" every time.
 sudo systemctl enable NetworkManager.service
