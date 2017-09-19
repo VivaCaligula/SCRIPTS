@@ -10,10 +10,10 @@ ICON="/usr/share/icons/Adwaita/16x16/devices/camera-photo.png"
 
 if [ "$1" == "window" ]
 then
-	scrot 'scrot17-%m-%d_%H-%M-%S.png' -s -e 'mv $f ~/Pictures/scrots/'
+	scrot -q 100 'scrot17-%m-%d_%H-%M-%S.png' -s -e 'mv $f ~/Pictures/scrots/'
 else
 	sleep 3
-	scrot 'scrot17-%m-%d_%H-%M-%S.png' -e 'mv $f ~/Pictures/scrots/'
+	scrot -q 100 'scrot17-%m-%d_%H-%M-%S.png' -e 'mv $f ~/Pictures/scrots/'
 fi
 
 dunstify --urgency=normal -p --icon=$ICON "Screenshot taken."

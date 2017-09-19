@@ -21,7 +21,7 @@ sudo pacman --color always --force --noconfirm -S git zip ntp openssh openvpn zs
 sudo systemctl enable gdm.service
 
 # Automatically DL + install all programs from the AUR; this will take a while.
-yaourt --color --force --noconfirm -S w3m imagemagick hsetroot neofetch gtop polybar-git dmenu2 dunstify wal-git i3lock-color-git micro grub-customizer chkboot nerd-fonts-complete pacmanity discord python-tempora python-portend python-cheroot mnemosyne brainworkshop keybase-bin pkgbrowser
+yaourt --color --force --noconfirm -S w3m imagemagick hsetroot neofetch gtop polybar-git dmenu2 dunstify wal-git i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord python-tempora python-portend python-cheroot mnemosyne brainworkshop keybase-bin pkgbrowser
 
 # Whatever Shell you get, replace zsh with your prefered shell.
 which zsh
@@ -57,7 +57,7 @@ git clone https://github.com/VivaCaligula/DOTFILES.git
 sudo mv -vf /home/DOTFILES/* ~/
 sudo rm -rf /home/DOTFILES
 cp -rf powerlineconfigs/* /usr/lib/python3.6/site-packages/powerline/config_files/
-# $ polybar -r rome # Refreshes polybar's cache.
+# $ polybar -r bar_name # Refreshes polybar's cache.
 
 # DL all your scripts.
 cd ~
