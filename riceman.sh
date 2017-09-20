@@ -2,8 +2,8 @@
 #=========================================#
 #     Caligula's rice manager script.     #
 #=========================================#
-# This is a script for managing the different rice configurations
-# featured here - https://github.com/VivaCaligula/DOTFILES
+# This is a script for switching between the different rice 
+# configurations featured here - https://github.com/VivaCaligula/DOTFILES
 
 echo "It's recommended you save and close any open nodes before switching."
 
@@ -11,7 +11,9 @@ while true
 do
     read -p "Switch aesthetic to ROME or ANTIUM? [r/a/q]: " answer
     case $answer in
-    [rR]* ) sudo hostname rome
+    [rR]* ) echo 'rome' >> ~/riceman.txt
+            sudo cp ~/riceman.txt /etc/hostname
+            rm -rf ~/riceman.txt
             cp -f ~/.config/bspwm/bspwmrcRome ~/.config/bspwm/bspwmrc
             echo "Switched bspwm config..."
             cp -f ~/.config/polybar/configRome ~/.config/polybar/config
@@ -26,7 +28,9 @@ do
             sleep 1
             pkill x
             break;;
-    [aA]* ) sudo hostname antium
+    [aA]* ) echo 'antium' >> ~/riceman.txt
+            sudo cp ~/riceman.txt /etc/hostname
+            rm -rf ~/riceman.txt
             cp -f ~/.config/bspwm/bspwmrcAntium ~/.config/bspwm/bspwmrc
             echo "Switched bspwm config..."
             cp -f ~/.config/polybar/configAntium ~/.config/polybar/config
