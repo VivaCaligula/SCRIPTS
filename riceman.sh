@@ -12,22 +12,32 @@ while true
 do
     read -p "Switch aesthetic to ROME or ANTIUM? [r/a/q]: " answer
     case $answer in
-    [rR]* ) cp -f ~/.config/bspwm/bwpwmRome ~/.config/bspwm/bspwmrc
+    [rR]* ) sudo hostname rome
+            cp -f ~/.config/bspwm/bspwmrcRome ~/.config/bspwm/bspwmrc
             echo "Switched bspwm config..."
             cp -f ~/.config/polybar/configRome ~/.config/polybar/config
             echo "Switched polybar config..."
-            cp -f ~/.config/termite/configRome ~/.config/termite/config
+            cp -f ~/.config/termite/Rome ~/.config/termite/config
             echo "Switched termite config..."
+            cp -f ~/scripts/.zshrcRome ~/.zshrc
+            echo "Switched zshrc..."
+            cp -f ~/scripts/dmenuRome.sh ~/scripts/dmenu.sh
+            echo "Switched dmenu config..."
             echo "Finished, killing X session..."
             sleep 1
             pkill x
             break;;
-    [aA]* ) cp -f ~/.config/bspwm/bwpwmAntium ~/.config/bspwm/bspwmrc
+    [aA]* ) sudo hostname antium
+            cp -f ~/.config/bspwm/bspwmrcAntium ~/.config/bspwm/bspwmrc
             echo "Switched bspwm config..."
             cp -f ~/.config/polybar/configAntium ~/.config/polybar/config
             echo "Switched polybar config..."
-            cp -f ~/.config/termite/configAntium ~/.config/termite/config
+            cp -f ~/.config/termite/Antium ~/.config/termite/config
             echo "Switched termite config..."
+            cp -f ~/scripts/.zshrcAntium ~/.zshrc
+            echo "Switched zshrc..."
+            cp -f ~/scripts/dmenuAntium.sh ~/scripts/dmenu.sh
+            echo "Switched dmenu config..."
             echo "Finished, killing X session..."
             sleep 1
             pkill x

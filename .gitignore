@@ -7,10 +7,13 @@
 
 # But not these files.
 !.gitignore
+!.zshrcRome
+!.zshrcAntium
 !4scanner.json
 !busyscreen.sh
 !colors.sh
-!dmenu.sh
+!dmenuAntium.sh
+!dmenuRome.sh
 !installer.sh
 !lock.sh
 !nmap.sh
