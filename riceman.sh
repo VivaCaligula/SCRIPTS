@@ -6,7 +6,6 @@
 # featured here - https://github.com/VivaCaligula/DOTFILES
 
 echo "It's recommended you save and close any open nodes before switching."
-printf "\n"
 
 while true
 do
