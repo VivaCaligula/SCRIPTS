@@ -1,15 +1,15 @@
 #!/bin/bash
-#==============================#
-#     Snerx-Unix ISVOS CLI     # aka skiddie stuff
-#==============================#
+#============================#
+#     Snerx-Unix VOS CLI     # aka skiddie stuff
+#============================#
 #
 # Created and maintained by Snax, aka Caligula.
 # https://snerx.com/snux
 #
 # This is going to become a very large script by the time it's done, but it 
 # will be incredibly useful and hopefully very powerfull when it is completed. 
-# The aim is to give it functionality not availible with basic shell + alias 
-# use, and to provide a psuedo-graphical super-script amalgamator. 
+# The aim is to provide a psuedo-graphical super-script amalgamator and give 
+# it functionality not availible with basic shell + alias use.
 #
 # Powerline + Awesome fonts and colorls are required for this to work properly.
 # https://github.com/ryanoasis/nerd-fonts
@@ -55,7 +55,7 @@ case $arg in
         echo -e "  -v\t\tPrints version number.\n"
         exit 0;;
     v)  echo -e "\n  $(basename -- "$0") version $VERSION \n"
-        exit 0
+        exit 0;;
     esac
 done
 shift $((OPTIND-1))
@@ -105,7 +105,7 @@ FileCheck() {
                 break;;
         [nN]* ) printf "\n"
                 break;;
-        * )     echo "  Enter yes or no.";;
+        * )     echo "  Enter yes or no."
         esac
     fi
 }

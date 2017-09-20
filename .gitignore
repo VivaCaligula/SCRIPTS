@@ -11,11 +11,14 @@
 !busyscreen.sh
 !colors.sh
 !dmenu.sh
+!installer.sh
 !lock.sh
 !nmap.sh
 !pipes.sh
 !README.md
-!rice.sh
+!riceman.sh
+!scheme-CanvasedPastel.sh
+!scheme-xErosion.sh
 !snux.sh
 !ss.sh
 !termrecorder.sh

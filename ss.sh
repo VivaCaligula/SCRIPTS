@@ -2,7 +2,6 @@
 #=======================================#
 #     Caligula's screenshot script.     #
 #=======================================#
-
 # This was modified from a script by Andre Linusus - https://i.imgur.com/QqUCFik.png
 
 mkdir -p ~/Pictures/scrots/

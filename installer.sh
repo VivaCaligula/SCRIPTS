@@ -1,13 +1,13 @@
 #!/bin/bash
-#=================================#
-#     Caligula's rice script.     #
-#=================================#
+#===========================================#
+#     Caligula's auto-installer script.     #
+#===========================================#
 
-# This is a rice script for Arch + bspwm and other shit.
+# This is an installer script for graphical environments, tools, and other shit.
 # It's assumed you've already installed Arch and enabled the AUR, xserver, etc.
 # If you haven't, do that real quick - https://gist.github.com/VivaCaligula/65a0e3489ec110ed08d31027b1065d4d
 # Additionally, you can autorun this script remotely by doing:
-# $ curl https://raw.githubusercontent.com/VivaCaligula/SCRIPTS/master/rice.sh | bash
+# $ curl https://raw.githubusercontent.com/VivaCaligula/SCRIPTS/master/installer.sh | bash
 
 # Refresh repositories and keyring.
 sudo pacman -Syu
@@ -21,7 +21,7 @@ sudo pacman --color always --force --noconfirm -S git zip ntp openssh openvpn zs
 sudo systemctl enable gdm.service
 
 # Automatically DL + install all programs from the AUR; this will take a while.
-yaourt --color --force --noconfirm -S w3m imagemagick hsetroot neofetch gtop polybar-git dmenu2 dunstify wal-git i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord python-tempora python-portend python-cheroot mnemosyne brainworkshop keybase-bin pkgbrowser
+yaourt --color --force --noconfirm -S w3m imagemagick hsetroot neofetch gtop polybar-git dmenu2 dunstify wal-git i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord python-tempora python-portend python-cheroot mnemosyne brainworkshop keybase-bin pkgbrowser micro
 
 # Whatever Shell you get, replace zsh with your prefered shell.
 which zsh
