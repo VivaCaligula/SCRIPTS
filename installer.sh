@@ -77,6 +77,9 @@ pip3 install 4scanner
 
 # So that you don't have to "$ sudo wifi-menu" every time.
 sudo systemctl enable NetworkManager.service
+# To replace vi with nano as the default text editor for commands such as visudo, set the VISUAL and EDITOR environment variables:
+# export VISUAL=nano
+# export EDITOR=nano
 
 # Restart your computer, log in with your new DM into bspwm, and you're done.
 systemctl reboot
