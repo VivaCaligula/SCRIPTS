@@ -21,14 +21,6 @@ do
     then
         dunstify --urgency=critical --icon=$ICON "BATTERY IS LOW!"
         sleep 60
-    elif [ "$BAT" = 16% ] || [ "$BAT" = 17% ] || [ "$BAT" = 18% ] || [ "$BAT" = 19% ] || [ "$BAT" = 20% ]
-    then
-        dunstify --urgency=critical --icon=$ICON "BATTERY IS LOW!"
-        sleep 60
-    elif [ "$BAT" = 21% ] || [ "$BAT" = 22% ] || [ "$BAT" = 23% ] || [ "$BAT" = 24% ] || [ "$BAT" = 25% ]
-    then
-        dunstify --urgency=critical --icon=$ICON "BATTERY IS LOW!"
-        sleep 60
     else
         sleep 60
     fi
