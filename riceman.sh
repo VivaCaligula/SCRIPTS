@@ -14,6 +14,7 @@ do
     [rR]* ) echo 'rome' >> ~/riceman.txt
             sudo cp ~/riceman.txt /etc/hostname
             rm -rf ~/riceman.txt
+            sudo hostname rome
             cp -f ~/.config/bspwm/bspwmrcRome ~/.config/bspwm/bspwmrc
             echo "Switched bspwm config..."
             cp -f ~/.config/polybar/configRome ~/.config/polybar/config
@@ -31,6 +32,7 @@ do
     [aA]* ) echo 'antium' >> ~/riceman.txt
             sudo cp ~/riceman.txt /etc/hostname
             rm -rf ~/riceman.txt
+            sudo hostname antium
             cp -f ~/.config/bspwm/bspwmrcAntium ~/.config/bspwm/bspwmrc
             echo "Switched bspwm config..."
             cp -f ~/.config/polybar/configAntium ~/.config/polybar/config
