@@ -70,7 +70,7 @@ export LANG=en_US.UTF-8
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nano'
 else
-  export EDITOR='vim'
+  export EDITOR='nano'
 fi
 
 # Compilation flags
