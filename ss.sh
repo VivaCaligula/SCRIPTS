@@ -5,7 +5,7 @@
 # This was modified from a script by Andre Linusus - https://i.imgur.com/QqUCFik.png
 
 mkdir -p ~/Pictures/scrots/
-ICON="/usr/share/icons/Adwaita/16x16/devices/camera-photo.png"
+#ICON="/usr/share/icons/Adwaita/16x16/devices/camera-photo.png"
 
 if [ "$1" == "window" ]
 then
