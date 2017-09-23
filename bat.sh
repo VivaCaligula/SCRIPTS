@@ -4,7 +4,7 @@
 #=================================================#
 # To list battery & adapter: $ ls -1 /sys/class/power_supply/
 
-ICON="/usr/share/icons/Adwaita/16x16/status/battery-caution.png"
+#ICON="/usr/share/icons/Adwaita/16x16/status/battery-caution.png"
 while true
 do
     BAT=`upower -i /org/freedesktop/UPower/devices/battery_BAT0 | awk '/percentage/{print $NF}'`
@@ -14,10 +14,6 @@ do
         dunstify --urgency=critical --icon=$ICON "BATTERY IS LOW!"
         sleep 60
     elif [ "$BAT" = 6% ] || [ "$BAT" = 7% ] || [ "$BAT" = 8% ] || [ "$BAT" = 9% ] || [ "$BAT" = 10% ]
-    then
-        dunstify --urgency=critical --icon=$ICON "BATTERY IS LOW!"
-        sleep 60
-    elif [ "$BAT" = 11% ] || [ "$BAT" = 12% ] || [ "$BAT" = 13% ] || [ "$BAT" = 14% ] || [ "$BAT" = 15% ]
     then
         dunstify --urgency=critical --icon=$ICON "BATTERY IS LOW!"
         sleep 60
