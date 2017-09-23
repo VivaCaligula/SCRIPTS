@@ -19,3 +19,5 @@ color12='#c4b67a'
 color13='#cfc995'
 color14='#d3d4b6'
 color15='#d6d3ac'
+# Extra
+color16='#35211b'
