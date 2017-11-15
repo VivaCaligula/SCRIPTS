@@ -59,6 +59,11 @@ sudo rm -rf /home/DOTFILES
 cp -rf powerlineconfigs/* /usr/lib/python3.6/site-packages/powerline/config_files/
 # $ polybar -r bar_name # Refreshes polybar's cache.
 
+# Atom Packages
+# Themes: dark-flat-ui, outlander-syntax, northern-atom-syntax, northern-atom-ui
+# Packages: Teletype, Minimap, Pigments, minimap-pigments, color-picker, split-diff, minimap-split-diff, highlight-line, highlight-selected, atom-clock, activate-power-mode, tree-view-autoresize
+# Disable stuff in general settings but also Settings > Packages > Whitespace
+
 # DL all your scripts.
 cd ~
 git clone https://github.com/VivaCaligula/SCRIPTS.git
