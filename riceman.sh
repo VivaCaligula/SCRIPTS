@@ -2,7 +2,7 @@
 #=========================================#
 #     Caligula's rice manager script.     #
 #=========================================#
-# This is a script for switching between the different rice 
+# This is a script for switching between the different rice
 # configurations featured here - https://github.com/VivaCaligula/DOTFILES
 
 echo "It's recommended you save and close any open nodes before switching."
@@ -21,12 +21,12 @@ do
             echo "Switched polybar config..."
             cp -f ~/.config/termite/Rome ~/.config/termite/config
             echo "Switched termite config..."
-            cp -f ~/scripts/.zshrcRome ~/.zshrc
+            cp -f ~/.zshrcRome ~/.zshrc
             echo "Switched zshrc..."
             cp -f ~/scripts/dmenuRome.sh ~/scripts/dmenu.sh
             echo "Switched dmenu config..."
             echo "Finished, killing X session..."
-            sleep 1
+            #sleep 1
             pkill x
             break;;
     [aA]* ) echo 'antium' >> ~/riceman.txt
@@ -39,12 +39,12 @@ do
             echo "Switched polybar config..."
             cp -f ~/.config/termite/Antium ~/.config/termite/config
             echo "Switched termite config..."
-            cp -f ~/scripts/.zshrcAntium ~/.zshrc
+            cp -f ~/.zshrcAntium ~/.zshrc
             echo "Switched zshrc..."
             cp -f ~/scripts/dmenuAntium.sh ~/scripts/dmenu.sh
             echo "Switched dmenu config..."
             echo "Finished, killing X session..."
-            sleep 1
+            #sleep 1
             pkill x
             break;;
     [qQ]* ) printf "\n"
