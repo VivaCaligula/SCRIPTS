@@ -7,8 +7,6 @@
 
 # But not these files.
 !.gitignore
-!.zshrcRome
-!.zshrcAntium
 !4scanner.json
 !bat.sh
 !busyscreen.sh
