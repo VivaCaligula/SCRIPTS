@@ -10,9 +10,9 @@
 # $ curl https://raw.githubusercontent.com/VivaCaligula/SCRIPTS/master/installer.sh | bash
 
 # Refresh repositories and keyring.
+sudo pacman-key --refresh-keys
 sudo pacman -Syu
 sudo yaourt -Syu
-sudo pacman-key --refresh-keys
 
 # Automatically dl + install all the programs you want from the arch repo; this will take a while.
 # Replace gdm with whatever your prefered DM is (as well as other prefered programs).
