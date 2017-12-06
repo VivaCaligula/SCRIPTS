@@ -8,7 +8,7 @@ bspc rule -a Termite follow=on state=tiled
 bspc node -t tiled
 clear
 printf "\n"
-neofetch --block_range 0 15
+neofetch --disable Model --disable CPU --disable GPU --disable Resolution --gap 6 --block_range 0 15
 sleep .2
 bspc node -p east -o 0.5
 sleep .2
