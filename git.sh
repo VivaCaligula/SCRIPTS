@@ -4,6 +4,9 @@
 #=====================================#
 
 git pull origin master
+printf "\n"
 git add *
+printf "\n"
 git commit -m "auto-commit script"
+printf "\n"
 git push origin master
