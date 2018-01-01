@@ -21,6 +21,8 @@ do
             echo "Switched polybar config..."
             cp -f ~/.config/termite/Rome ~/.config/termite/config
             echo "Switched termite config..."
+            cp -f ~/gtk.rome.css ~/gtk.css
+            echo "Switched gtk css..."
             cp -f ~/.zshrcRome ~/.zshrc
             echo "Switched zshrc..."
             cp -f ~/scripts/dmenuRome.sh ~/scripts/dmenu.sh
@@ -39,6 +41,8 @@ do
             echo "Switched polybar config..."
             cp -f ~/.config/termite/Antium ~/.config/termite/config
             echo "Switched termite config..."
+            cp -f ~/gtk.antium.css ~/gtk.css
+            echo "Switched gtk css..."
             cp -f ~/.zshrcAntium ~/.zshrc
             echo "Switched zshrc..."
             cp -f ~/scripts/dmenuAntium.sh ~/scripts/dmenu.sh
