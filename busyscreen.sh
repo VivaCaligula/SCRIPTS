@@ -21,7 +21,7 @@ sleep .2
 termite &
 sleep .2
 bspc node -f west
-sleep .1
+sleep .2
 bspc node -p south -o 0.5
 sleep .2
 
