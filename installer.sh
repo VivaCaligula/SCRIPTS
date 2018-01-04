@@ -16,7 +16,7 @@ sudo yaourt -Syu
 
 # Automatically dl + install all the programs you want from the arch repo; this will take a while.
 # Replace gdm with whatever your prefered DM is (as well as other prefered programs).
-sudo pacman --color always --force --noconfirm -S git zip ntp openssh openvpn zsh rxvt-unicode python-pip ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts gnome gnome-tweak-tool networkmanager networkmanager-openvpn bspwm sxhkd termite termite-terminfo feh compton ranger tmux htop scrot nmap firefox chromium keepassxc atom vim powerline-fonts terminus-font screenfetch vlc phonon-qt4-vlc electrum hexchat transmission-qt libreoffice-still obs-studio ffmpeg gimp bleachbit checksec extundelete mpd ncmpcpp cmatrix thunar cool-retro-term dunst redshift gimp wine steam kodi nethack dwarffortress shellcheck
+sudo pacman --color always --force --noconfirm -S git zip unrar ntp openssh openvpn zsh rxvt-unicode python-pip ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts gnome gnome-tweak-tool networkmanager networkmanager-openvpn bspwm sxhkd termite termite-terminfo feh compton ranger tmux htop scrot nmap firefox chromium keepassxc atom vim powerline-fonts terminus-font screenfetch vlc phonon-qt4-vlc electrum hexchat transmission-qt libreoffice-still obs-studio ffmpeg gimp bleachbit checksec extundelete mpd ncmpcpp cmatrix thunar cool-retro-term dunst redshift gimp wine steam kodi nethack dwarffortress shellcheck
 # dmenu replaced with patched dmenu2 in AUR
 sudo systemctl enable gdm.service
 
