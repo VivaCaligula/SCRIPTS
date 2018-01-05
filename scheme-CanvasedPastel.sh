@@ -1,8 +1,8 @@
-# Colorscheme "CanvasedPastel" by Dkeg, found here - https://terminal.sexy/
+# Modified from colorscheme "CanvasedPastel" by Dkeg, found here - https://terminal.sexy/
 foreground='#746c48'
 foreground_bold='#746c48'
 cursor='#746c48'
-background='#170f0d'
+background='#221916'
 color0='#26251c'
 color1='#323027'
 color2='#3d4339'
@@ -17,7 +17,7 @@ color10='#b2b08c'
 color11='#c4bb8c'
 color12='#c4b67a'
 color13='#cfc995'
-color14='#d3d4b6'
-color15='#d6d3ac'
+color14='#cfc995'
+color15='#49332c'
 # Extra
 color16='#35211b'
