@@ -36,6 +36,6 @@ do
             exit;;
     [qQ]* ) printf "\n"
             exit;;
-    * )     echo "  Enter Record, Cat, or Quit.";;
+    * )     echo "  Enter Replay, Cat, or Quit.";;
     esac
 done
