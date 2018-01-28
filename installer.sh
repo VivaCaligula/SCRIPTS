@@ -21,7 +21,7 @@ sudo pacman --color always --force --noconfirm -S git zip unrar ntp openssh open
 sudo systemctl enable gdm.service
 
 # Automatically DL + install all programs from the AUR; this will take a while.
-yaourt --color --force --noconfirm -S w3m imagemagick hsetroot neofetch gtop polybar dmenu2 dunstify python-pywal i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord-canary python-tempora python-portend python-cheroot mnemosyne brainworkshop keybase-bin pkgbrowser ghostwriter
+yaourt --color --force --noconfirm -S w3m imagemagick hsetroot micro neofetch gtop polybar dmenu2 dunstify python-pywal i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord-canary python-tempora python-portend python-cheroot mnemosyne brainworkshop keybase-bin pkgbrowser ghostwriter
 
 # Whatever Shell you get, replace zsh with your prefered shell.
 which zsh

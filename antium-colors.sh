@@ -1,0 +1,26 @@
+#! /bin/sh
+#========================================#
+#     Caligula's Antium Colorscheme.     #
+#========================================#
+foreground='#e2d3c3'
+foreground_bold='#e2d3c3'
+cursor='#e2d3c3'
+background='#67605e'
+color0='#625a58'
+color8='#625a58'
+color1='#a7bab0'
+color9='#a7bab0'
+color2='#8e8e8e'
+color10='#8e8e8e'
+color3='#a0a0a0'
+color11='#a0a0a0'
+color4='#ac8383'
+color12='#ac8383'
+color5='#9ab993'
+color13='#9ab993'
+color6='#868686'
+color14='#868686'
+color7='#b9b9b9'
+color15='#b9b9b9'
+color16='#e2d3c3'
+color17='#67605e'

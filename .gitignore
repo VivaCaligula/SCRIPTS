@@ -8,6 +8,7 @@
 # But not these files.
 !.gitignore
 !4scanner.json
+!antium-colors.sh
 !bat.sh
 !busyscreen.sh
 !colors.sh
@@ -20,8 +21,6 @@
 !pipes.sh
 !README.md
 !riceman.sh
-!scheme-CanvasedPastel.sh
-!scheme-xErosion.sh
 !snux.sh
 !ss.sh
 !termrecorder.sh
