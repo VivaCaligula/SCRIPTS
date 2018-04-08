@@ -72,8 +72,8 @@ sudo rm -rf /home/DOTFILES
 # $ polybar -r bar_name # Refreshes polybar's cache.
 
 # Atom Packages
-# Themes: dark-flat-ui, outlander-syntax, northern-atom-syntax, northern-atom-ui
-# Packages: Teletype, Minimap, Pigments, minimap-pigments, color-picker, split-diff, minimap-split-diff, highlight-line, highlight-selected, atom-clock, activate-power-mode, tree-view-autoresize, linter-shellcheck
+# Themes: dark-flat-ui, outlander-syntax, northern-atom-syntax, northern-atom-ui, city-lights-ui, city-lights-syntax
+# Packages: Teletype, Minimap, Pigments, minimap-pigments, color-picker, split-diff, minimap-split-diff, highlight-line, highlight-selected, atom-clock, activate-power-mode, tree-view-autoresize, emmet, file-icons, atom-live-server, atom-beautify, gpp-compiler, minimap-linter, linter-spell, linter-spell-html, linter-shellcheck, linter-csslint, linter-htmlhint, linter-markdown, linter-pylama, linter-cpplint
 # Disable stuff in general settings but also Settings > Packages > Whitespace
 
 # DL all your scripts.
