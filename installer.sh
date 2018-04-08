@@ -73,7 +73,7 @@ sudo rm -rf /home/DOTFILES
 
 # Atom Packages
 # Themes: dark-flat-ui, outlander-syntax, northern-atom-syntax, northern-atom-ui
-# Packages: Teletype, Minimap, Pigments, minimap-pigments, color-picker, split-diff, minimap-split-diff, highlight-line, highlight-selected, atom-clock, activate-power-mode, tree-view-autoresize, emmet, file-icons, atom-live-server, atom-beautify, gpp-compiler, minimap-linter, linter-spell, linter-spell-html, linter-shellcheck, linter-csslint, linter-htmlhint, linter-markdown, linter-pylama, linter-cpplint
+# Packages: sync-settings, teletype, minimap, pigments, minimap-pigments, color-picker, split-diff, minimap-split-diff, highlight-line, highlight-selected, atom-clock, activate-power-mode, tree-view-autoresize, emmet, file-icons, atom-live-server, atom-beautify, gpp-compiler, minimap-linter, linter-spell, linter-spell-html, linter-shellcheck, linter-csslint, linter-htmlhint, linter-markdown, linter-pylama, linter-cpplint, git-plus, tool-bar, tool-bar-main, git-plus-toolbar
 # Disable stuff in general settings but also Settings > Packages > Whitespace
 
 # DL all your scripts.
