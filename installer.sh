@@ -12,7 +12,7 @@
 # Refresh repositories and keyring.
 sudo pacman-key --refresh-keys
 sudo pacman -Syu
-sudo yaourt -Syu
+sudo yay -Syu
 
 # Automatically dl + install all the programs you want from the arch repo; this will take a while.
 # Replace gdm with whatever your prefered DM is (as well as other prefered programs).
@@ -21,7 +21,7 @@ sudo pacman --color always --overwrite --noconfirm -S git zip unrar ntp openssh 
 sudo systemctl enable gdm.service
 
 # Automatically DL + install all programs from the AUR; this will take a while.
-yaourt --color --force --noconfirm -S w3m imagemagick hsetroot micro neofetch gtop polybar dmenu2 dunstify python-pywal i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord-canary python-tempora python-portend python-cheroot mnemosyne brainworkshop pkgbrowser tor-browser
+yay --removemake --cleanafter --sudoloop --clean -S w3m imagemagick hsetroot micro neofetch gtop polybar dmenu2 dunstify python-pywal i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord python-tempora python-portend python-cheroot mnemosyne brainworkshop pkgbrowser tor-browser
 
 # Whatever Shell you get, replace zsh with your prefered shell.
 which zsh
