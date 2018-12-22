@@ -3,9 +3,6 @@
 #     Snerx-Unix VOS CLI     # aka skiddie stuff
 #============================#
 #
-# Created and maintained by Snax, aka Caligula.
-# https://snerx.com/snux
-#
 # This is going to become a very large script by the time it's done, but it 
 # will be incredibly useful and hopefully very powerfull when it is completed. 
 # The aim is to provide a psuedo-graphical super-script amalgamator and give 
