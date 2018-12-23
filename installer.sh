@@ -86,5 +86,6 @@ sudo systemctl enable NetworkManager.service
 export VISUAL=nano
 export EDITOR=nano
 
+# Bspwm won't show Rome or Antium unless you run the riceman.sh script and select one.
 # Restart your computer, log in with your new DM into bspwm, and you're done.
 systemctl reboot
