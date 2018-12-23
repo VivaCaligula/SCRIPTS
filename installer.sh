@@ -3,7 +3,7 @@
 #     Caligula's auto-installer script.     #
 #===========================================#
 
-# This is a script for creating a BSPWM-based pseudo-DE in Arch-Linux.
+# This is a script for creating and ricing a BSPWM-based pseudo-DE in Arch-Linux.
 # The details and purpose of this rice package: snerx.com/winux and snerx.com/snux.
 # If you haven't enabled the AUR, xserver, etcetera yet, do that real quick - https://gist.github.com/VivaCaligula/65a0e3489ec110ed08d31027b1065d4d
 # Additionally, you can autorun this script remotely by doing:
