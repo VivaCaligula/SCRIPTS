@@ -3,24 +3,24 @@
 #     Caligula's auto-installer script.     #
 #===========================================#
 
-# This is an installer script for graphical environments, tools, and other shit.
-# It's assumed you've already installed Arch and enabled the AUR, xserver, etc.
-# If you haven't, do that real quick - https://gist.github.com/VivaCaligula/65a0e3489ec110ed08d31027b1065d4d
+# This is a script for creating a BSPWM-based pseudo-DE in Arch-Linux.
+# The details and purpose of this rice package: snerx.com/winux and snerx.com/snux.
+# If you haven't enabled the AUR, xserver, etcetera yet, do that real quick - https://gist.github.com/VivaCaligula/65a0e3489ec110ed08d31027b1065d4d
 # Additionally, you can autorun this script remotely by doing:
 # $ curl https://raw.githubusercontent.com/VivaCaligula/SCRIPTS/master/installer.sh | bash
 
 # Refresh repositories and keyring.
 sudo pacman-key --refresh-keys
 sudo pacman -Syu
-sudo yay -Syu
 
 # Automatically dl + install all the programs you want from the arch repo; this will take a while.
 # Replace gdm with whatever your prefered DM is (as well as other prefered programs).
-sudo pacman --color always --overwrite --noconfirm -S git zip unrar ntp openssh openvpn ruby zsh rxvt-unicode python-pip ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts gnome gnome-tweaks networkmanager networkmanager-openvpn bspwm sxhkd termite termite-terminfo feh compton ranger tmux htop glances scrot nmap firefox keepassxc atom vim powerline-fonts terminus-font screenfetch vlc phonon-qt5-vlc electrum transmission-qt libreoffice-still ffmpeg gimp bleachbit checksec extundelete mpd ncmpcpp cmatrix thunar cool-retro-term dunst redshift wine steam nethack shellcheck keybase-gui
-# dmenu replaced with patched dmenu2 in AUR
-sudo systemctl enable gdm.service
+sudo pacman --color always --overwrite --noconfirm -S git zip unrar ntp openssh openvpn ruby zsh yay python-pip ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts networkmanager networkmanager-openvpn bspwm sxhkd termite termite-terminfo feh compton ranger tmux htop glances scrot nmap firefox keepassxc atom vim powerline-fonts terminus-font screenfetch vlc phonon-qt5-vlc electrum transmission-qt ffmpeg bleachbit checksec extundelete mpd ncmpcpp cmatrix cool-retro-term dunst redshift wine steam nethack shellcheck keybase-gui
+# To change out the DM: $ sudo systemctl enable gdm.service
 
 # Automatically DL + install all programs from the AUR; this will take a while.
+sudo yay -Syu
+# Supports colored output when you enable Color option in the /etc/pacman.conf file.
 yay --removemake --cleanafter --sudoloop --clean -S w3m imagemagick hsetroot micro neofetch gtop polybar dmenu2 dunstify python-pywal i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord python-tempora python-portend python-cheroot mnemosyne brainworkshop pkgbrowser tor-browser
 
 # Whatever Shell you get, replace zsh with your prefered shell.
