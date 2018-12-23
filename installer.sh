@@ -9,7 +9,7 @@
 # Additionally, you can autorun this script remotely by doing:
 # $ curl https://raw.githubusercontent.com/VivaCaligula/SCRIPTS/master/installer.sh | bash
 
-# Refresh repositories and keyring.
+# Refresh keyring and repositories.
 sudo pacman-key --refresh-keys
 sudo pacman -Syu
 
