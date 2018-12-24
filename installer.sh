@@ -14,7 +14,7 @@ sudo pacman-key --refresh-keys
 sudo pacman -Syu
 
 # Automatically dl + install all the programs you want from the arch repo; this will take a while.
-# Replace gdm with whatever your prefered DM is (as well as other prefered programs).
+# Replace DM with whatever your prefered DM is (as well as other prefered programs).
 sudo pacman --color always --overwrite --noconfirm -S git zip unrar ntp openssh openvpn ruby zsh yay python-pip ttf-dejavu poppler inkscape fontforge awesome-terminal-fonts networkmanager networkmanager-openvpn bspwm sxhkd termite termite-terminfo feh compton ranger tmux htop glances scrot nmap firefox keepassxc atom vim powerline-fonts terminus-font screenfetch vlc phonon-qt5-vlc electrum transmission-qt ffmpeg bleachbit checksec extundelete mpd ncmpcpp cmatrix cool-retro-term dunst redshift wine steam nethack shellcheck keybase-gui
 # To change out the DM: $ sudo systemctl enable gdm.service
 
