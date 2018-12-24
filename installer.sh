@@ -21,7 +21,7 @@ sudo pacman --color always --overwrite --noconfirm -S git zip unrar ntp openssh 
 # Automatically DL + install all programs from the AUR; this will take a while.
 sudo yay -Syu
 # Supports colored output when you enable Color option in the /etc/pacman.conf file.
-yay --cleanafter --sudoloop -S w3m imagemagick hsetroot micro neofetch gtop polybar dmenu2 dunstify python-pywal i3lock-color-git grub-customizer chkboot nerd-fonts-complete pacmanity discord python-tempora python-portend python-cheroot mnemosyne brainworkshop pkgbrowser tor-browser
+yay --cleanafter --sudoloop -S w3m imagemagick hsetroot micro neofetch gtop polybar dmenu2 dunstify python-pywal i3lock-color-git grub-customizer chkboot nerd-fonts-complete discord python-tempora python-portend python-cheroot mnemosyne brainworkshop pkgbrowser tor-browser
 
 # Whatever Shell you get, replace zsh with your prefered shell.
 which zsh
